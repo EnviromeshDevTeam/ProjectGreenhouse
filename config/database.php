@@ -56,7 +56,7 @@ return [
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE',RDS_DB_NAME),
             'username' => env('DB_USERNAME',RDS_USERNAME),
-            'password' = RDS_PASSWORD,
+            'password' => env('DB_PASSWORD',RDS_PASSWORD),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

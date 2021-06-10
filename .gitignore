@@ -42,3 +42,5 @@ Homestead.json
 # Laravel IDE helper
 *.meta.*
 _ide_*
+docker-compose.yml
+.DS_Store
