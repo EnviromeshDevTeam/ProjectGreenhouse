@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('RDS_HOSTNAME','DB_HOST'),
-            'port' => env('RDS_DB_PORT', 'DB_PORT'),
-            'database' => env('RDS_DB_NAME','DB_DATABASE'),
-            'username' => env('RDS_USERNAME', 'DB_USERNAME'),
-            'password' => env('RDS_PASSWORD','DB_PASSWORD'),
+            'host' => env('DB_HOST',$_SERVER['RDS_HOSTNAME']), //testing -sdf
+            'port' => env('DB_PORT', $_SERVER['RDS_DB_PORT']),
+            'database' => env('DB_DATABASE',$_SERVER['RDS_DB_NAME']),
+            'username' => env('DB_USERNAME',$_SERVER['RDS_USERNAME']),
+            'password' => env('DB_PASSWORD',$_SERVER['RDS_PASSWORD']),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
