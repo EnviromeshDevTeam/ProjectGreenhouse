@@ -16,6 +16,30 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
                 </div>
+
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('admin.datas.index') }}" :active="request()->routeIs('admin.datas.index')">--}}
+{{--                        {{ __('datas') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                </div>--}}<!--Uncomment once Alex's done his MVC-->
+
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('admin.devices.index') }}" :active="request()->routeIs('admin.devices.index')">
+                        {{ __('Devices') }}
+                    </x-jet-nav-link>
+                </div>
+
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('admin.categories.index') }}" :active="request()->routeIs('admin.categories.index')">--}}
+{{--                        {{ __('categories') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                </div>--}} <!--Uncomment After Kym Does category MVC-->
+
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
+{{--                    <x-jet-nav-link href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.user.index')">--}}
+{{--                        {{ __('users') }}--}}
+{{--                    </x-jet-nav-link>--}}<!--Uncomment Once users stuff is done-->
+{{--                </div>--}}
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
