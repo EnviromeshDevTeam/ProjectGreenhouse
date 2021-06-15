@@ -20,6 +20,7 @@
                     <tbody>
                     @foreach($data as $item)
                         <tr>
+                            <td>{{$item->id}}</td>
                             <td>{{$item->device_id}}</td>
                             <td>{{$item->category_id}}</td>
                             <td>{{$item->data}}</td>

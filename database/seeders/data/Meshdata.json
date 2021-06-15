@@ -1,12 +1,12 @@
 [
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -31,12 +31,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -61,12 +61,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -91,12 +91,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -121,12 +121,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -151,12 +151,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -181,12 +181,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -211,12 +211,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -241,12 +241,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":49.0
    },
    {
@@ -271,12 +271,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -301,12 +301,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -331,12 +331,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -361,12 +361,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -391,12 +391,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -421,12 +421,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -451,12 +451,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -481,12 +481,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -511,12 +511,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -541,12 +541,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -571,12 +571,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -601,12 +601,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -631,12 +631,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -661,12 +661,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -691,12 +691,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -721,12 +721,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -751,12 +751,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -781,12 +781,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -811,12 +811,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -841,12 +841,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -871,12 +871,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -901,12 +901,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -931,12 +931,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -961,12 +961,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -991,12 +991,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1021,12 +1021,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -1051,12 +1051,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1081,12 +1081,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -1111,12 +1111,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -1141,12 +1141,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
@@ -1171,12 +1171,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1201,12 +1201,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1231,12 +1231,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1261,12 +1261,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1291,12 +1291,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1321,12 +1321,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1351,12 +1351,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1381,12 +1381,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1411,12 +1411,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1441,12 +1441,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1471,12 +1471,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1501,12 +1501,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1531,12 +1531,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1561,12 +1561,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1591,12 +1591,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1621,12 +1621,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
@@ -1651,12 +1651,12 @@
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {

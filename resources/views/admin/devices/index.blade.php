@@ -15,6 +15,7 @@
                     <table class="w-100">
                         <tr>
                             <th>Id</th>
+                            <th>Name</th>
                             <th>Address</th>
                             <th>Updated_At</th>
                             <th>Created_At</th>
@@ -24,16 +25,14 @@
                             <tr>
                                 <td class="text-center">{{$device->id}}</td>
                                 <td class="text-center">{{$device->name}}</td>
+                                <td class="text-center">{{$device->address}}</td>
                                 <td class="text-center">{{$device->updated_at}}</td>
                                 <td class="text-center">{{$device->created_at}}</td>
 
                                 <td class="flex justify-center">
 
                                     <!--Show func for specific device-->
-                                    <form action="{{route('devices.show'), $device}}">
-                                        @csrf
-                                        <button class="button button-primary" type="submit">View</button>
-                                    </form>
+                                    <a href="./{{$device->id}}">show</a>
 
                                     <!--Delete func for specific device-->
                                     <form method="POST" action="{{route('devices.destroy', $device)}}">
