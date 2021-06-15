@@ -27,7 +27,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     })->name('dashboard');
 
     //Data Routes
-    Route::resource('datas', 'DataController@index');
+    Route::resource('data', DataController::class)->name('index', 'admin.datas.index');;
 
     //Device Routes
     Route::resource('devices', DeviceController::class)->name('index', 'admin.devices.index');

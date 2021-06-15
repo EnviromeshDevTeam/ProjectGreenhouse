@@ -13,7 +13,7 @@
                 <!--NO ID assuming autoIncrementing-->
 
                 <!--TODO: THIS WILL PROBABLY NOT WORK-->
-                <form method="POST" action="{{route('/store')}}">
+                <form method="POST" action=".">
                     @csrf
                     <label for="address">Enter Address Here:</label>
                     <input id="address" name="address" type="text" value="default">

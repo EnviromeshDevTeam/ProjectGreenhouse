@@ -22,7 +22,6 @@
 
                         @forelse($devices as $device)
                             <tr>
-                            <!--Device Model Info From Database-->
                                 <td class="text-center">{{$device->id}}</td>
                                 <td class="text-center">{{$device->name}}</td>
                                 <td class="text-center">{{$device->updated_at}}</td>
@@ -31,7 +30,7 @@
                                 <td class="flex justify-center">
 
                                     <!--Show func for specific device-->
-                                    <form method="POST" action="{{route('devices.show'), $device}}">
+                                    <form action="{{route('devices.show'), $device}}">
                                         @csrf
                                         <button class="button button-primary" type="submit">View</button>
                                     </form>

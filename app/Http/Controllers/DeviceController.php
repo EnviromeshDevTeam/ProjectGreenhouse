@@ -49,9 +49,9 @@ class DeviceController extends Controller
         ]);
 
         $device = new Device();
-        $device->fill($request['address']);
-        $device->attach(Carbon::now());//TODO: Will these work? which one?
-        $device->created_at = Carbon::now();
+        $device->address = 'address';
+//        $device->attach(Carbon::now());//TODO: Will these work? which one?
+//        $device->created_at = Carbon::now();
 
         $device->save();
         //TODO: FIGURE OUT how yo assign new
@@ -60,7 +60,7 @@ class DeviceController extends Controller
 //            $this->created_at = Carbon::now()
 //        );
 
-        return redirect('admin.devices.index');
+        return redirect('devices');
     }
 
     /**

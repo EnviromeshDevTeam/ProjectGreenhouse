@@ -20,7 +20,7 @@ class DataController extends Controller
     public function index()
     {
         $data = MeshData::all();
-        return view('data.index',compact('data'));
+        return view('admin.datas.index',compact('data'));
     }
 
     /**
@@ -50,9 +50,9 @@ class DataController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function show($id)
+    public function show(MeshData $data)
     {
-        //
+        return view('admin.datas.show',compact('data'));
     }
 
     /**
@@ -84,8 +84,9 @@ class DataController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function destroy($id)
+    public function destroy(MeshData $data)
     {
-        //
+        $data->delete();
+        return redirect('.');
     }
 }

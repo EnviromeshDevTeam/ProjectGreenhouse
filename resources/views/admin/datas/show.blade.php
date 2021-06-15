@@ -8,7 +8,20 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <!--Your View Table here-->
+                <table>
+                    <tr>
+                        <td>Device</td>
+                        <td>{{$data->device_id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td>{{$data->category_id}}</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td>
+                        <td>{{$data->data}}</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
