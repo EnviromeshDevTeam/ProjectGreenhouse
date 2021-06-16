@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Device;
-use Carbon\Carbon;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -42,25 +41,20 @@ class DeviceController extends Controller
      */
     public function store(Request $request)
     {
-
-//        Device::create($request->validated());//THIS WILL NOT WORK
+        //How do we integrate this validated sequence
+        //if validated ?
         $validated = $request->validate([
+            'name'=>'required',
             'address'=>'required'
         ]);
 
         $device = new Device();
-        $device->address = 'address';
-//        $device->attach(Carbon::now());//TODO: Will these work? which one?
-//        $device->created_at = Carbon::now();
+        $device->name = $request->name;
+        $device->address = $request->address;
 
         $device->save();
-        //TODO: FIGURE OUT how yo assign new
-//        Device::create($this->address = $request['address'],
-//            $this->updated_at = Carbon::now(),
-//            $this->created_at = Carbon::now()
-//        );
 
-        return redirect('devices');
+        return redirect()->route('devices.index');
     }
 
     /**
@@ -77,24 +71,38 @@ class DeviceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
-     * @return Response
+     * @param Device $device
+     * @return Application|Factory|View|Response
      */
-    public function edit($id)
+    public function edit(Device $device)
     {
-        //
+        return view('admin.devices.update', compact('device'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param  int  $id
-     * @return Response
+     * @param Device $device
+     * @return RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Device $device, Request $request): RedirectResponse
     {
-        //
+        //How do we integrate this validated sequence
+        //if validated ?
+        $validated = $request->validate([
+            'name'=>'required',
+            'address'=>'required'
+        ]);
+
+
+
+        $device->name = $request->name;
+        $device->address = $request->address;
+
+        $device->save();
+
+        return redirect()->route('devices.index');
     }
 
     /**
@@ -103,9 +111,9 @@ class DeviceController extends Controller
      * @param Device $device
      * @return RedirectResponse
      */
-    public function destroy(Device $device)
+    public function destroy(Device $device): RedirectResponse
     {
         $device->delete();
-        return redirect()->route('admin.devices.index');
+        return redirect()->route('devices.index');
     }
 }

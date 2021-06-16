@@ -12,6 +12,7 @@
 
                 <h2>Showing selected device</h2>
                 <h3>{{$device->id}}</h3>
+                <h3>{{$device->name}}</h3>
                 <h3>{{$device->address}}</h3>
                 <h3>{{$device->updated_at}}</h3>
                 <h3>{{$device->created_at}}</h3>

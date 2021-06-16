@@ -10,11 +10,18 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <!--Your View Table here-->
 
+                <form action="{{route('devices.create')}}">
+                    @method('GET')
+                    @csrf
+                    <button class="button button-primary" type="submit">CREATE NEW DEVICE</button>
+                </form>
+
                 <!--div.mt-8.mx-auto>table.w-100>tr>(th*4)Press TAB after the bracket to get a basic table with 4 headers -->
                 <div class="mt-8 mx-auto">
                     <table class="w-100">
                         <tr>
                             <th>Id</th>
+                            <th>Names</th>
                             <th>Address</th>
                             <th>Updated_At</th>
                             <th>Created_At</th>
@@ -24,16 +31,28 @@
                             <tr>
                                 <td class="text-center">{{$device->id}}</td>
                                 <td class="text-center">{{$device->name}}</td>
+                                <td class="text-center">{{$device->address}}</td>
                                 <td class="text-center">{{$device->updated_at}}</td>
                                 <td class="text-center">{{$device->created_at}}</td>
 
                                 <td class="flex justify-center">
 
                                     <!--Show func for specific device-->
-                                    <form action="{{route('devices.show'), $device}}">
+
+                                    <form action="{{route('devices.show', $device)}}">
+                                        @method('GET')
                                         @csrf
-                                        <button class="button button-primary" type="submit">View</button>
+                                        <button class="button button-primary" type="submit">VIEW</button>
                                     </form>
+
+                                    <form action="{{route('devices.edit', $device)}}">
+                                        @method('GET')
+                                        @csrf
+                                        <button class="button button-primary" type="submit">UPDATE</button>
+                                    </form>
+
+
+                                {{--<a href="{{route('devices.show'), $device}}"></a>--}}
 
                                     <!--Delete func for specific device-->
                                     <form method="POST" action="{{route('devices.destroy', $device)}}">

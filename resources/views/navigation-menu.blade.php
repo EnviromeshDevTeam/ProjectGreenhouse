@@ -19,12 +19,12 @@
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('admin.datas.index') }}" :active="request()->routeIs('admin.datas.index')">
-                        {{ __('datas') }}
+                        {{ __('Data') }}
                     </x-jet-nav-link>
                 </div><!--Uncomment once Alex's done his MVC-->
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('admin.devices.index') }}" :active="request()->routeIs('admin.devices.index')">
+                    <x-jet-nav-link href="{{ route('devices.index') }}" :active="request()->routeIs('devices.index')">
                         {{ __('Devices') }}
                     </x-jet-nav-link>
                 </div>

@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create new device entry') }}
+            {{ __('Update Existing Device!') }}
         </h2>
     </x-slot>
 
@@ -13,13 +13,13 @@
                 <!--NO ID assuming autoIncrementing-->
 
                 <!--TODO: THIS WILL PROBABLY NOT WORK-->
-                <form id="devicesCreateForm" method="POST" action="{{route('devices.store')}}">
-                    @method('POST')
+                <form id="devicesUpdateForm" method="POST" action="{{route('devices.update', $device)}}">
                     @csrf
-                    <label for="name">Enter Name of Device Here:</label>
+                    @method('PUT')
+                    <label for="name">Enter Updated Device Name Here:</label>
                     <input id="name" name="name" type="text" value="Environment 1 Device">
 
-                    <label for="address">Enter Device MAC Address Here:</label>
+                    <label for="address">Enter Updated MAC Address Here:</label>
                     <input id="address" name="address" type="text" value="example = 00:1B:44:11:3A:B7">
                     <input type="submit">
                 </form>

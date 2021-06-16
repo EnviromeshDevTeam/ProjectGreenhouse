@@ -8,5 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Device extends Model
 {
     use HasFactory;
-    public $fillable = ['address', 'updated_at', 'created_at'];
+
+    public $timestamps = true;
+
+    public $fillable = ['name', 'address'];
 }
