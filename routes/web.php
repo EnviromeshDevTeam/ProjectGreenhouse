@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\DeviceController;
 use Illuminate\Support\Facades\Route;
@@ -32,10 +33,8 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     //Device Routes
     Route::resource('devices', DeviceController::class);
 
-    //Route::post('/store', DeviceController::class)->name('store');//Probably wont work
-
     //Category Routes
-    //  Route::resource('categories', CategoryController::class); #Uncomment after Kym does
+    Route::resource('categories', CategoryController::class); #Uncomment after Kym does
 
     //User Routes
      // Route::resource('users', UserController::class);

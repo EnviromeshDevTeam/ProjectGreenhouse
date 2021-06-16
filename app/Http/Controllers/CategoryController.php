@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Device;
+use App\Models\Category;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -10,7 +10,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class DeviceController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,8 +19,8 @@ class DeviceController extends Controller
      */
     public function index()
     {
-        $devices = Device::all();
-        return view('admin.devices.index', compact('devices'));
+        $categories = Category::all();
+        return view('admin.categories.index', compact('categories'));
     }
 
     /**
@@ -30,87 +30,82 @@ class DeviceController extends Controller
      */
     public function create()
     {
-        return view('admin.devices.create');
+        return view('admin.categories.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return Application|Factory|View|RedirectResponse
+     * @return RedirectResponse
      */
     public function store(Request $request)
     {
         //How do we integrate this validated sequence
         //if validated ?
         $validated = $request->validate([
-            'name'=>'required',
-            'address'=>'required'
+            'dataname'=>'required',
         ]);
 
-        $device = new Device();
+        $category = new Category();
 
-        $device->name = $request->name;
-        $device->address = $request->address;
-        $device->save();
-        return redirect()->route('devices.index');
+        $category->dataname = $request->dataname;
+        $category->save();
+        return redirect()->route('categories.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param Device $device
+     * @param Category $category
      * @return Application|Factory|View|Response
      */
-    public function show(Device $device)
+    public function show(Category $category)
     {
-        return view('admin.devices.show', compact('device'));
+        return view('admin.categories.show', compact('category'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Device $device
+     * @param Category $category
      * @return Application|Factory|View|Response
      */
-    public function edit(Device $device)
+    public function edit(Category $category)
     {
-        return view('admin.devices.update', compact('device'));
+        return view('admin.categories.update', compact('category'));
     }
 
     /**
      * Update the specified resource in storage.
      *
+     * @param Category $category
      * @param Request $request
-     * @param Device $device
      * @return RedirectResponse
      */
-    public function update(Device $device, Request $request): RedirectResponse
+    public function update(Category $category,Request $request)
     {
         //How do we integrate this validated sequence
         //if validated ?
         $validated = $request->validate([
-            'name'=>'required',
-            'address'=>'required'
+            'dataname'=>'required',
         ]);
 
-        $device->name = $request->name;
-        $device->address = $request->address;
+        $category->dataname = $request->dataname;
+        $category->save();
 
-        $device->save();
-
-        return redirect()->route('devices.index');
+        return redirect()->route('categories.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param Device $device
+     * @param Category $category
      * @return RedirectResponse
      */
-    public function destroy(Device $device): RedirectResponse
+    public function destroy(Category $category)
     {
-        $device->delete();
-        return redirect()->route('devices.index');
+        $category->delete();
+        return redirect()->route('categories.index');
     }
 }

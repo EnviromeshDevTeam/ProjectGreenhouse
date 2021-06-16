@@ -29,11 +29,11 @@
                     </x-jet-nav-link>
                 </div>
 
-{{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
-{{--                    <x-jet-nav-link href="{{ route('admin.categories.index') }}" :active="request()->routeIs('admin.categories.index')">--}}
-{{--                        {{ __('categories') }}--}}
-{{--                    </x-jet-nav-link>--}}
-{{--                </div>--}} <!--Uncomment After Kym Does category MVC-->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('categories.index') }}" :active="request()->routeIs('categories.index')">
+                        {{ __('Categories') }}
+                    </x-jet-nav-link>
+                </div>
 
 {{--                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">--}}
 {{--                    <x-jet-nav-link href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.user.index')">--}}

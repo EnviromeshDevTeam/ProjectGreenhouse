@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create new device entry') }}
+            {{ __('Update Existing Category!') }}
         </h2>
     </x-slot>
 
@@ -11,18 +11,13 @@
                 <!--Your View Table here-->
 
                 <!--NO ID assuming autoIncrementing-->
-
-                <form id="devicesCreateForm" method="POST" action="{{route('devices.store')}}">
-                    @method('POST')
+                <form id="categoryUpdateForm" method="POST" action="{{route('categories.update', $category)}}">
                     @csrf
-                    <label for="name">Enter Name of Device Here:</label>
-                    <input id="name" name="name" type="text" value="Environment 1 Device">
-
-                    <label for="address">Enter Device MAC Address Here:</label>
-                    <input id="address" name="address" type="text" value="00:1B:44:11:3A:B7">
+                    @method('PUT')
+                    <label for="dataname">Enter Updated Category Name Here:</label>
+                    <input id="dataname" name="dataname" type="text" value="Rads PPM">
                     <input type="submit">
                 </form>
-
             </div>
         </div>
     </div>
