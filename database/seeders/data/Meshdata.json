@@ -1,1682 +1,1682 @@
 [
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":409.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":4,
       "data":1.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":47.236
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":434.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":5.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":45.622
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":465.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":9.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":45.084
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":485.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":12.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":45.084
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":492.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.546
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":500.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":15.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":497.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":497.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":49.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":726.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":49.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":518.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":17.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":45.084
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":500.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":15.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":497.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":492.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":492.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":497.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":500.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":15.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":506.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":16.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":497.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":492.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":486.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":13.0
    },
    {
       "device_id":1,
       "category":3,
+      "data":486.0
+   },
+   {
+      "device_id":1,
+      "category":3,
+      "data":13.0
+   },
+   {
+      "device_id":1,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":475.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":11.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":459.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":8.0
    },
    {
       "device_id":1,
       "category":3,
+      "data":459.0
+   },
+   {
+      "device_id":1,
+      "category":3,
+      "data":8.0
+   },
+   {
+      "device_id":1,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":465.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":9.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":480.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":12.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":486.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":13.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":463.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":9.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":459.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":8.0
    },
    {
       "device_id":1,
       "category":3,
+      "data":459.0
+   },
+   {
+      "device_id":1,
+      "category":3,
+      "data":8.0
+   },
+   {
+      "device_id":1,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":44.008
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":457.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":8.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":463.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":9.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":492.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":14.0
    },
    {
       "device_id":1,
       "category":3,
+      "data":492.0
+   },
+   {
+      "device_id":1,
+      "category":3,
+      "data":14.0
+   },
+   {
+      "device_id":1,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":524.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":18.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":536.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":20.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":529.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":19.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":518.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":17.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":500.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":15.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":492.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":14.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":480.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":12.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":478.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":11.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":42.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":466.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":10.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":466.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":10.0
    },
    {
       "device_id":1,
       "category":3,
+      "data":466.0
+   },
+   {
+      "device_id":1,
+      "category":3,
+      "data":10.0
+   },
+   {
+      "device_id":1,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":465.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":9.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":475.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":11.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":480.0
-   },
-   {
-      "device_id":1,
-      "category":2,
-      "data":12.0
    },
    {
       "device_id":1,
       "category":3,
+      "data":480.0
+   },
+   {
+      "device_id":1,
+      "category":3,
+      "data":12.0
+   },
+   {
+      "device_id":1,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":485.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":12.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":491.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":13.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":491.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":13.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":491.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":13.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":480.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":12.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":466.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":10.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":466.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":10.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":454.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":8.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":454.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":8.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":443.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":6.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":434.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":5.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":426.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":3.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":43.47
    },
    {
       "device_id":1,
-      "category":0,
+      "category":1,
       "data":22.0
    },
    {
       "device_id":1,
-      "category":1,
+      "category":2,
       "data":43.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":422.0
    },
    {
       "device_id":1,
-      "category":2,
+      "category":3,
       "data":3.0
    },
    {
       "device_id":1,
-      "category":3,
+      "category":5,
       "data":0.0
    },
    {
       "device_id":1,
-      "category":4,
+      "category":6,
       "data":42.932
    }
 ]

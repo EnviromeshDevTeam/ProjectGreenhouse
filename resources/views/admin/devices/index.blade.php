@@ -21,7 +21,7 @@
                     <table class="w-100">
                         <tr>
                             <th>Id</th>
-                            <th>Names</th>
+                            <th>Name</th>
                             <th>Address</th>
                             <th>Updated_At</th>
                             <th>Created_At</th>
@@ -50,9 +50,6 @@
                                         @csrf
                                         <button class="button button-primary" type="submit">UPDATE</button>
                                     </form>
-
-
-                                {{--<a href="{{route('devices.show'), $device}}"></a>--}}
 
                                     <!--Delete func for specific device-->
                                     <form method="POST" action="{{route('devices.destroy', $device)}}">

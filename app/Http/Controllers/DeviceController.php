@@ -49,12 +49,22 @@ class DeviceController extends Controller
         ]);
 
         $device = new Device();
+<<<<<<< HEAD
         $device->name = $request->name;
         $device->address = $request->address;
+=======
+        $device->address = $request->address;
+//        $device->attach(Carbon::now());//TODO: Will these work? which one?
+//        $device->created_at = Carbon::now();
+>>>>>>> afc53ad9db954f9a3f1026eef2ddec654fcb33ad
 
         $device->save();
 
+<<<<<<< HEAD
         return redirect()->route('devices.index');
+=======
+        return redirect(route('admin.devices.index'));
+>>>>>>> afc53ad9db954f9a3f1026eef2ddec654fcb33ad
     }
 
     /**

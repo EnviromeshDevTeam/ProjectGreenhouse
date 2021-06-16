@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Device;
 use App\Models\meshData;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -61,9 +63,11 @@ class DataController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit(MeshData $data)
     {
-        //
+        $category = Category::all();
+        $devices = Device::all();
+        return view('admin.datas.edit', compact('data','category','devices'));
     }
 
     /**
@@ -73,9 +77,14 @@ class DataController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, MeshData $data)
     {
-        //
+        $data->device_id = request('device_id');
+        $data->category_id = request('category_id');
+        $data->data = request('data');
+        $data->save();
+
+        return redirect(route('data.index'));
     }
 
     /**
@@ -87,6 +96,7 @@ class DataController extends Controller
     public function destroy(MeshData $data)
     {
         $data->delete();
-        return redirect('.');
+        return redirect('data');
+
     }
 }

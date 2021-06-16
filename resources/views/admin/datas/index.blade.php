@@ -11,24 +11,27 @@
                 <table>
                     <thead>
                         <tr>
+                            <th>Id</th>
                             <th>Device</th>
                             <th>Category</th>
                             <th>Value</th>
                             <th>Actions</th>
+                            <th><a href="data/create">Create</a></th>
                         </tr>
                     </thead>
                     <tbody>
                     @foreach($data as $item)
                         <tr>
+                            <td>{{$item->id}}</td>
                             <td>{{$item->device_id}}</td>
                             <td>{{$item->category_id}}</td>
                             <td>{{$item->data}}</td>
-                            <td><a href="./{{$item->id}}">show</a></td>
-                            <td>
-                                <form method="POST" onsubmit="./{{$item->id}}">
+                            <td><a href="data/{{$item->id}}">show</a>
+                            <a href="data/{{$item->id}}/edit">edit</a>
+                                <form method="POST" action="{{route('data.destroy', $item)}}">
                                     @csrf
-                                    @method('DELETE')
-                                    <button>delete</button>
+                                    @method('delete')
+                                    <button type="submit">delete</button>
                                 </form>
                             </td>
                         </tr>

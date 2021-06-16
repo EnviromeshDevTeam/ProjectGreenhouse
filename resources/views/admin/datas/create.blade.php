@@ -9,6 +9,39 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <!--Your View Table here-->
+                <form action="POST">
+                    @csrf
+                    <table>
+                        <tr>
+                            <td>Device</td>
+                            <td>
+                                <select id="device_id">
+                                    @foreach($devices as $item)
+                                        <option value="{{$item->id}}">{{$item->address}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td>
+                                <select id="category" >
+                                    @foreach($category as $point)
+                                        <option value="{{$point->id}}">{{$point->name}}</option>
+                                    @endforeach
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Value</td>
+                            <td><Input type="number" name="data" value="{{$data->data}}"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./">back</a></td>
+                            <td><button>Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
     </div>
