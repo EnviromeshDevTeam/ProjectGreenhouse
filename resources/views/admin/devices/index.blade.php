@@ -18,7 +18,7 @@
 
                 <!--div.mt-8.mx-auto>table.w-100>tr>(th*4)Press TAB after the bracket to get a basic table with 4 headers -->
                 <div class="mt-8 mx-auto">
-                    <table class="w-100">
+                    <table class="w-100 table-auto">
                         <tr>
                             <th>Id</th>
                             <th>Name</th>

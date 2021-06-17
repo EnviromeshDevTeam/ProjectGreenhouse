@@ -11,4 +11,8 @@ class Category extends Model
     public $timestamps = false;
 
     public $fillable = ['dataname'];
+
+//    public function meshdata(){
+//        return $this->hasMany(MeshData::class);
+//    }
 }
