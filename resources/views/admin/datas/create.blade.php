@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <!--Your View Table here-->
-                <form method="POST" action="{{route('data.store')}}">
+                <form class="form-group" method="POST" action="{{route('data.store')}}">
                     @csrf
                     @method('POST')
                     <table>

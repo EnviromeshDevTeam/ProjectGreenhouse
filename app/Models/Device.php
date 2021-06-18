@@ -15,6 +15,6 @@ class Device extends Model
 
     public function data()
     {
-        return $this->hasMany(MeshData::class);
+        return $this->hasMany(MeshData::class, 'device_id','id');
     }
 }
