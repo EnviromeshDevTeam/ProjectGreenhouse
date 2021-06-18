@@ -14,8 +14,8 @@
                 <form id="categoryUpdateForm" method="POST" action="{{route('categories.update', $category)}}">
                     @csrf
                     @method('PUT')
-                    <label for="dataname">Enter Updated Category Name Here:</label>
-                    <input id="dataname" name="dataname" type="text" value="Rads PPM">
+                    <label for="name">Enter Updated Category Name Here:</label>
+                    <input id="name" name="name" type="text" value="Rads PPM">
                     <input type="submit">
                 </form>
             </div>

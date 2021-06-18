@@ -16,6 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call( [
             MeshDataSeeder::class,
             UserSeeder::class,
+            CategorySeeder::class,
+            Deviceseeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
     }

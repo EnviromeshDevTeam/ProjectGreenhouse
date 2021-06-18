@@ -12,7 +12,7 @@
 
                 <h2>Showing selected device</h2>
                 <h3>{{$category->id}}</h3>
-                <h3>{{$category->dataname}}</h3>
+                <h3>{{$category->name}}</h3>
             </div>
         </div>
     </div>

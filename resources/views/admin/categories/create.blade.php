@@ -15,8 +15,8 @@
                 <form id="categoryCreateForm" method="POST" action="{{route('categories.store')}}">
                     @method('POST')
                     @csrf
-                    <label for="dataname">Enter Name of Category Here:</label>
-                    <input id="dataname" name="dataname" type="text" value="RADS">
+                    <label for="name">Enter Name of Category Here:</label>
+                    <input id="name" name="name" type="text" value="RADS">
                     <input type="submit">
                 </form>
 

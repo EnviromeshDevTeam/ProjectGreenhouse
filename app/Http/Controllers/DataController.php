@@ -32,7 +32,10 @@ class DataController extends Controller
      */
     public function create()
     {
-        //
+
+        $category = Category::all();
+        $devices = Device::all();
+        return view('admin.datas.create',compact('devices','category'));
     }
 
     /**
@@ -43,7 +46,17 @@ class DataController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        request()->validate([
+            'device_id' => 'required',
+            'category_id' => 'required'
+        ]);
+        $data = new MeshData();
+        $data->device_id = request('device_id');
+        $data->category_id = request('category_id');
+        $data->data = request('data');
+        $data->save();
+
+        return redirect('data');
     }
 
     /**
@@ -79,12 +92,16 @@ class DataController extends Controller
      */
     public function update(Request $request, MeshData $data)
     {
-        $data->device_id = request('device_id');
-        $data->category_id = request('category_id');
+        if(request('device_id') != null){
+            $data->device_id = request('device_id');
+        }
+        if(request('category_id') != null){
+            $data->category_id = request('category_id');
+        }
         $data->data = request('data');
         $data->save();
 
-        return redirect(route('data.index'));
+        return redirect('data');
     }
 
     /**

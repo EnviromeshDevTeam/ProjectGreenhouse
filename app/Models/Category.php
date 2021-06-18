@@ -10,9 +10,9 @@ class Category extends Model
     use HasFactory;
     public $timestamps = false;
 
-    public $fillable = ['dataname'];
+    public $fillable = ['name'];
 
-//    public function meshdata(){
-//        return $this->hasMany(MeshData::class);
-//    }
+    public function meshdata(){
+        return $this->hasMany(MeshData::class);
+    }
 }

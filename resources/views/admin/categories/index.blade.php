@@ -21,13 +21,13 @@
                     <table class="w-100">
                         <tr>
                             <th>Id</th>
-                            <th>Dataname</th>
+                            <th>Name</th>
                         </tr>
 
                         @forelse($categories as $category)
                             <tr>
                                 <td class="text-center">{{$category->id}}</td>
-                                <td class="text-center">{{$category->dataname}}</td>
+                                <td class="text-center">{{$category->name}}</td>
 
                                 <td class="flex justify-center">
 

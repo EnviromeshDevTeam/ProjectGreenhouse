@@ -10,13 +10,13 @@ class MeshData extends Model
 {
     use HasFactory;
 
-//    public function device(): HasOne
-//    {
-//        return $this->hasOne(Device::class);
-//    }
-//
-//    public function category(): HasOne
-//    {
-//        return $this->hasOne(Category::class);
-//    }
+    public function device()
+    {
+        return $this->hasOne(Device::class, 'id', 'device_id');
+    }
+
+    public function category()
+    {
+        return $this->hasOne(Category::class,'id','category_id');
+    }
 }

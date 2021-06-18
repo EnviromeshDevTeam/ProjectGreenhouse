@@ -9,21 +9,21 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <!--Your View Table here-->
-                <form method="PATCH" action=".">
-                    <h1>To be updated when Cat and Devices are up-to-date</h1>
+                <form method="POST" action="{{route('data.update',$data)}}">
                     @csrf
+                    @method('PUT')
                     <label>Device</label>
-                    <select id="device_id">
+                    <select name="device_id">
                         @foreach($devices as $item)
                             @if($item->id == $data->device_id)
-                                <option selected value="{{$item->id}}">{{$item->address}}</option>
+                                <option selected="{{$item->id}}" value="{{$item->id}}">{{$item->address}}</option>
                             @else
                                 <option value="{{$item->id}}">{{$item->address}}</option>
                             @endif
                         @endforeach
                     </select>
                     <label>Category</label>
-                    <select id="category" >
+                    <select name="category_id">
                         @foreach($category as $point)
                             @if($point->id == $data->category_id)
                                 <option selected value="{{$point->id}}">{{$point->name}}</option>

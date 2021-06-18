@@ -15,10 +15,10 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('dataname');
+            $table->string('name');
 
             //Added dataname and deleted timestamps according to group dbdiagram
-            //$table->timestamps();
+//            $table->timestamps();
         });
     }
 

@@ -23,8 +23,8 @@
                     @foreach($data as $item)
                         <tr>
                             <td>{{$item->id}}</td>
-                            <td>{{$item->device_id}}</td>
-                            <td>{{$item->category_id}}</td>
+                            <td>{{$item->device->name}}</td>
+                            <td>{{$item->category->name}}</td>
                             <td>{{$item->data}}</td>
                             <td><a href="data/{{$item->id}}">show</a>
                             <a href="data/{{$item->id}}/edit">edit</a>

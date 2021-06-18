@@ -44,12 +44,12 @@ class CategoryController extends Controller
         //How do we integrate this validated sequence
         //if validated ?
         $validated = $request->validate([
-            'dataname'=>'required',
+            'name'=>'required',
         ]);
 
         $category = new Category();
 
-        $category->dataname = $request->dataname;
+        $category->name = $request->name;
         $category->save();
         return redirect()->route('categories.index');
     }
@@ -88,10 +88,10 @@ class CategoryController extends Controller
         //How do we integrate this validated sequence
         //if validated ?
         $validated = $request->validate([
-            'dataname'=>'required',
+            'name'=>'required',
         ]);
 
-        $category->dataname = $request->dataname;
+        $category->name = $request->name;
         $category->save();
 
         return redirect()->route('categories.index');

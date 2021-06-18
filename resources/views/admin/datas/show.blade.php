@@ -11,11 +11,11 @@
                 <table>
                     <tr>
                         <td>Device</td>
-                        <td>{{$data->device_id}}</td>
+                        <td>{{$data->device->name}}</td>
                     </tr>
                     <tr>
                         <td>Category</td>
-                        <td>{{$data->category_id}}</td>
+                        <td>{{$data->category->name}}</td>
                     </tr>
                     <tr>
                         <td>Value</td>

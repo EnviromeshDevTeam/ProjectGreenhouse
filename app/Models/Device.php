@@ -13,8 +13,8 @@ class Device extends Model
 
     public $fillable = ['name', 'address'];
 
-//    public function data()
-//    {
-//        return $this->hasMany(MeshData::class);
-//    }
+    public function data()
+    {
+        return $this->hasMany(MeshData::class);
+    }
 }
