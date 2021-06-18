@@ -40,3 +40,11 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
      // Route::resource('users', UserController::class);
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
