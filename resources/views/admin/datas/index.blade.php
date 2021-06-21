@@ -9,6 +9,23 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-1">
                 <a class="m-1 btn btn-success" href="data/create">Create</a>
+                <form class="form-group" method="GET" action="data">
+                    <select class="form-select mb-3" name="search">
+                        @if(request('search') == 0)
+                         <option selected value="0">none</option>
+                        @else
+                            <option value="0">none</option>
+                        @endif
+                        @foreach($category as $cat)
+                            @if($cat->id == request('search'))
+                                <option selected value="{{$cat->id}}">{{$cat->name}}</option>
+                            @else
+                                <option value="{{$cat->id}}">{{$cat->name}}</option>
+                            @endif
+                        @endforeach
+                    </select>
+                    <button class="btn btn-primary" type="submit">Filter</button>
+                </form>
                 <table class="table">
                     <thead>
                         <tr>

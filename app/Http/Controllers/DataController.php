@@ -21,8 +21,13 @@ class DataController extends Controller
      */
     public function index()
     {
-        $data = MeshData::all();
-        return view('admin.datas.index',compact('data'));
+        if(request('search') != 0){
+            $data = MeshData::all()->where('category_id', request('search'));
+        } else {
+            $data = MeshData::all();
+        }
+        $category = Category::all();
+        return view('admin.datas.index',compact('data','category'));
     }
 
     /**
@@ -32,7 +37,6 @@ class DataController extends Controller
      */
     public function create()
     {
-
         $category = Category::all();
         $devices = Device::all();
         return view('admin.datas.create',compact('devices','category'));
