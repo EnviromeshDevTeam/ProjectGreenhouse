@@ -20,7 +20,7 @@
                     <thead class="thead-dark">
                     <tr>
                         <th>Id</th>
-                        <th>Dataname</th>
+                        <th>Name</th>
                         <th></th>
                         <th></th>
                         <th></th>
@@ -30,7 +30,7 @@
                     @forelse($categories as $category)
                         <tr>
                             <td class="text-center">{{$category->id}}</td>
-                            <td class="text-center">{{$category->dataname}}</td>
+                            <td class="text-center">{{$category->name}}</td>
 
                             <td>
                                 <form action="{{route('categories.show', $category)}}">

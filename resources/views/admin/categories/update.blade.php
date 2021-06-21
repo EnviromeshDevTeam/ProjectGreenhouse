@@ -16,8 +16,8 @@
         @method('PUT')
 
         <div class="text-light form-group">
-            <label for="dataname">Enter Updated Category Name Here:</label>
-            <input id="dataname" name="dataname" type="text" placeholder="Carbon PPM">
+            <label for="name">Enter Updated Category Name Here:</label>
+            <input id="name" name="name" type="text" placeholder="Carbon PPM">
         </div>
         <input class="btn btn-primary" type="submit">
     </form>

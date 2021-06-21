@@ -13,7 +13,7 @@
         {{--<img class="card-img-top" src="https://i.all3dp.com/cdn-cgi/image/fit=cover,w=1284,h=722,gravity=0.5x0.5,format=auto/wp-content/uploads/2020/10/20112249/Raspberry-Pi-Projects.jpeg" alt="rasp pi breadboard">--}}
         <div class="card-body text-light">
             <!--Your View Table here-->
-            <h2 class="card-title">{{$category->dataname}}</h2>
+            <h2 class="card-title">{{$category->name}}</h2>
             <p class="card-subtitle mb-2 text-muted">ID: {{$category->id}}</p>
         </div>
     </div>
