@@ -1,26 +1,23 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create new Category') }}
-        </h2>
+        <div class="d-flex justify-content-between">
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                {{ __('Create new Category') }}
+            </h2>
+            <a class="btn btn-secondary" href="{{route('categories.index')}}">Exit</a>
+
+        </div>
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <!--Your View Table here-->
+    <form class="container p-3 card bg-dark" style="width:20rem;" id="categoryCreateForm" method="POST"
+          action="{{route('categories.store')}}">
+        @csrf
+        @method('POST')
 
-                <!--NO ID assuming autoIncrementing-->
-
-                <form id="categoryCreateForm" method="POST" action="{{route('categories.store')}}">
-                    @method('POST')
-                    @csrf
-                    <label for="name">Enter Name of Category Here:</label>
-                    <input id="name" name="name" type="text" value="RADS">
-                    <input type="submit">
-                </form>
-
-            </div>
+        <div class="text-light form-group">
+            <label for="dataname">Enter New Category Name Here:</label>
+            <input id="dataname" name="dataname" type="text" placeholder="Carbon PPM">
         </div>
-    </div>
+        <input class="btn btn-primary" type="submit">
+    </form>
 </x-app-layout>

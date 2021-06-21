@@ -1,9 +1,12 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Category Data') }}
-        </h2>
-        <a class="btn btn-primary" href="{{route('categories.create')}}">Create New Category</a>
+        <div class="d-flex justify-content-between">
+
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                {{ __('Category Data') }}
+            </h2>
+            <a class="btn btn-primary" href="{{route('categories.create')}}">Create New Category</a>
+        </div>
     </x-slot>
 
     <div class="py-12">
@@ -15,13 +18,13 @@
 
                 <table class="table table-bordered table-striped table-hover table-sm">
                     <thead class="thead-dark">
-                        <tr>
-                            <th>Id</th>
-                            <th>Dataname</th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
+                    <tr>
+                        <th>Id</th>
+                        <th>Dataname</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
                     </thead>
 
                     @forelse($categories as $category)
