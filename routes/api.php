@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\api\ApiCategoryController;
+use App\Http\Controllers\api\ApiDeviceController;
+use App\Http\Controllers\DataController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('data','\App\Http\Controllers\api\DataController');
+Route::resource('device',ApiDeviceController::class);
+Route::resource('category',ApiCategoryController::class);
