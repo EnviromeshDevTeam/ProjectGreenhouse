@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\meshData;
+use App\Models\MeshData;
 use Illuminate\Database\Seeder;
 use Illuminate\Http\File;
 
