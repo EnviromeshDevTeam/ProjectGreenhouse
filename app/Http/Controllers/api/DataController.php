@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Device;
 use App\Models\MeshData;
 use Illuminate\Http\Request;
+use function Livewire\str;
 
 class DataController extends Controller
 {
@@ -27,18 +30,34 @@ class DataController extends Controller
     public function store(Request $request)
     {
         request()->validate([
-            'device_id' => 'required',
-            'category_id' => 'required',
-            'data' => 'required',
+            'address' => 'required',
+            'info' => 'required',
         ]);
+        if(request('timestamp') != null)
+            $timestamp = request('timestamp');
+        else
+            $timestamp = now();
+        $device = Device::where('address',request('address'))->first();
+        $dataset = json_decode($request->info);
+        $added = [];
+        $index = 1;
+//        $added = request('info');
+        foreach ($dataset as $datapoint) {
+            $category = Category::where('name', $datapoint->category)->first();
+            $data = new MeshData();
+            $data->device_id = $device->id;
+            $data->category_id = $category->id;
+            $data->data = $datapoint->data;
+            $added[$index] = $data->attributesToArray();
+            $index += 1;
+        }
 
-        $data = new MeshData();
-        $data->device_id = request('device_id');
-        $data->category_id = request('category_id');
-        $data->data = request('data');
-        $data->save();
+        foreach($added as $data){
+            MeshData::insert($data);
+        }
 
-        return response()->json($data,201);
+        return response()->json($added,201);
+
     }
 
     /**
@@ -59,8 +78,9 @@ class DataController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, MeshData $data)
+    public function update(Request $request, $id)
     {
+        $data = MeshData::where('id',$id)->first();
         if(request('device_id') != null){
             $data->device_id = request('device_id');
         }
@@ -70,7 +90,7 @@ class DataController extends Controller
         $data->data = request('data');
         $data->save();
 
-        return 'data';
+        return response()->json($data,200);;
     }
 
     /**
@@ -81,6 +101,7 @@ class DataController extends Controller
      */
     public function destroy(MeshData $data)
     {
+
         $data->delete();
         return response('','410');
     }
