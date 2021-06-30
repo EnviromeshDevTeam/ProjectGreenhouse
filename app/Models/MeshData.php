@@ -12,6 +12,11 @@ class MeshData extends Model
 
     protected $fillable = ['device_id','category_id','data'];
 
+//    protected $casts = [
+//        'created_at' => 'h:i:s', //Hours minutes seconds. Change this later to include Date once dataset is bigger
+//        'created_at' => 'h:i:s',
+//    ];
+
     public function device()
     {
         return $this->hasOne(Device::class, 'id', 'device_id');

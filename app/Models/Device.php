@@ -13,6 +13,8 @@ class Device extends Model
 
     public $fillable = ['name', 'address'];
 
+    protected $casts = ['status'=>'array'];
+
     public function data()
     {
         return $this->hasMany(MeshData::class, 'device_id','id');

@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\DeviceController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,15 +18,14 @@ use Illuminate\Support\Facades\Route;
 */
 //Default Laravel Welcome Page Load
 //Any other routes have to ve logged in to access
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', '\App\Http\Controllers\WelcomeController@index');
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     //Logged in dashboard route
-    Route::get('/dashboard', function(){
-        return view('dashboard');
-    })->name('dashboard');
+//    Route::get('/dashboard', function(){
+//        return view('dashboard');
+//    })->name('dashboard');
+    Route::get('dashboard', '\App\Http\Controllers\WelcomeController@dashboard_graphing')->name('dashboard');
 
     //Data Routes
     Route::resource('data', DataController::class)->name('index', 'admin.datas.index');
@@ -37,7 +37,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::resource('categories', CategoryController::class); #Uncomment after Kym does
 
     //User Routes
-     // Route::resource('users', UserController::class);
+    // Route::resource('users', UserController::class);
 });
 
 Auth::routes();
