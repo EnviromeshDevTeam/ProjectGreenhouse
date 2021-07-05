@@ -15,7 +15,7 @@
                     {{ __('Dashboard') }}
                 </x-jet-nav-link>
 
-                <x-jet-nav-link href="{{ route('admin.datas.index') }}" :active="request()->routeIs('admin.datas.index')">
+                <x-jet-nav-link href="{{ route('data.index') }}" :active="request()->routeIs('data.index')">
                     {{ __('Environment Data') }}
                 </x-jet-nav-link>
 

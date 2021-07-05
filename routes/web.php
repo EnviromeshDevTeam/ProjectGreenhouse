@@ -21,29 +21,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', '\App\Http\Controllers\WelcomeController@index');
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
-    //Logged in dashboard route
-//    Route::get('/dashboard', function(){
-//        return view('dashboard');
-//    })->name('dashboard');
+    //Protect these routes with login
+
+    //Load Default Page after login
     Route::get('dashboard', '\App\Http\Controllers\WelcomeController@dashboard_graphing')->name('dashboard');
 
     //Data Routes
-    Route::resource('data', DataController::class)->name('index', 'admin.datas.index');
+    Route::resource('data', DataController::class);
 
     //Device Routes
     Route::resource('devices', DeviceController::class);
 
     //Category Routes
-    Route::resource('categories', CategoryController::class); #Uncomment after Kym does
-
-    //User Routes
-    // Route::resource('users', UserController::class);
+    Route::resource('categories', CategoryController::class);
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
