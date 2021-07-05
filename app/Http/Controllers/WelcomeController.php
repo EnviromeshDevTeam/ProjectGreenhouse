@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Device;
 use App\Models\MeshData;
 use Carbon\Carbon;
+use DebugBar\DebugBar;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -29,51 +30,93 @@ class WelcomeController extends Controller
             } else {
                 //$device->status = $this->device_unknown;
                 $device->setAttribute('status', $this->device_unknown);
-
             }
         }
         return view('welcome')->with('devices', $device_list);
     }
 
-//NOT IMPLEMENTED YET
     public function dashboard_graphing()
     {
-
-        //Y AXIS = ENVVARIABLENAME Unit of measurement
-        //X AXIS = Timestamp of data
-        //Title = Last Measurements From Device of Variable Name
-        //Legend = Env VariableName
-
-        //Find just for debugging
-//        $envName = MeshData::where('category_id', 1)
-//                            ->select('category_id', 'data', 'created_at')
-//                            ->get();
-
-        //Couldn't get direct model working so after exhaustion ive got this code thats
-
-        //Experimental below: Pseudo code and testing
+        //Hardcoded values for now, future grab these from database
+        $masterReturn = [
+            ['title' => 'Temperature Graph', 'vAxis' => 'Degrees Celsius', 'htmlId' => 'tempChart', 'values' => [['created_at', 'data']]],
+            ['title' => 'Humidity Graph', 'vAxis' => 'humidity', 'htmlId' => 'humChart', 'values' => [['created_at', 'data']]],
+            ['title' => 'Carbon Dioxide Graph', 'vAxis' => 'co2 level', 'htmlId' => 'co2Chart', 'values' => [['created_at', 'data']]],
+            ['title' => 'Air Quality Graph', 'vAxis' => 'Parts per', 'htmlId' => 'tvocChart', 'values' => [['created_at', 'data']]],
+            ['title' => 'Soil Moisture Graph', 'vAxis' => 'Moisture per sq inch', 'htmlId' => 'soilMoistChart', 'values' => [['created_at', 'data']]],
+            ['title' => 'Cpu Temperature Graph', 'vAxis' => 'Degrees Celsius', 'htmlId' => 'cpuTempChart', 'values' => [['created_at', 'data']]]
+        ];
 
 
-//        for($id = 1; $id <= 6; $i++){
-//            $env = MeshData::all()->where('category_id', 2)->makeHidden(['id','category_id', 'device_id', 'updated_at']);
-//        }
+        $allData = MeshData::all()->take(60);
 
-        //NOT EFFICIENT need better direct select solution
-        $env = MeshData::all()->where('category_id', 2)->makeHidden(['id','category_id', 'device_id', 'updated_at']);
+        ///TODO: I dont think category_id seperation is taking place
 
-        //$catName = Category::findOrFail(1);
-        //Use catName
-
-        //Below we want array(['data', 'created_at'], [22, timestamp here], [22, timestamp here],[22, timestamp here])
-        $envValArray = $env->unique('id')->values();
-
-        $envName = array(['created_at', 'data']);
-
-        //TODO: remove str_replace... its working but then our json_encode function auto converts it anyway
-        foreach ($envValArray as $envIterable)
-            $datarow[] = array(str_replace('""', "'", ($envIterable['created_at']->toTimeString())), $envIterable['data']);
-                $envName = array_merge($envName, $datarow);
-
-        return view('dashboard')->with('envName', $envName);
+        //->groupBy('category_id')
+        $groupedCollection = $allData->groupBy('category_id');
+        $i = 0;
+        foreach ($groupedCollection as $gCollkey => $gCollvalue){
+            $tempArray = array();
+            foreach($gCollvalue as $plotArray){
+                $eachPlotPoint[] = [$plotArray->created_at->toTimeString(), $plotArray->data];
+                $tempArray = array_merge($tempArray, $eachPlotPoint);
+            }
+            $masterReturn[$i]['values'] = array_merge($masterReturn[$i]['values'], $tempArray);
+            $i += 1;
+        }
+        return view('dashboard')->with('envData', $masterReturn);
     }
 }
+
+//        $i = 0;
+//        foreach ($groupedCollection as $sectionedCollection) {
+//            //groupedcollection is currently
+//            //                             [
+//            //                                ['1'=>[id, created_at, data...],
+//            //                                      [id, created_at, data...],
+//            //                                      [id, created_at, data...]],
+//            //                                ['2'=>[[id, created_at, data...],
+//            //                                      [id, created_at, data...],
+//            //                                      [id, created_at, data...]]]
+//            //                              ]
+//
+//
+//            $tempArray = array();
+//
+//            foreach ($sectionedCollection as $envArray) {
+//                $eachPlotPoint[] = [$envArray->created_at->toTimeString(), $envArray->data];
+//                $tempArray = array_merge($tempArray, $eachPlotPoint);
+//            }
+//            $masterReturn[$i]['values'] = array_merge($masterReturn[$i]['values'], $tempArray);
+//            $i += 1;
+//        }
+//        return view('dashboard')->with('envData', $masterReturn);
+//    }
+//}
+
+
+//        $i = 0;
+//        foreach ($groupedCollection as $sectionedCollection) {
+//            //groupedcollection is currently
+//            //                             [
+//            //                                ['1'=>[id, created_at, data...],
+//            //                                      [id, created_at, data...],
+//            //                                      [id, created_at, data...]],
+//            //                                ['2'=>[[id, created_at, data...],
+//            //                                      [id, created_at, data...],
+//            //                                      [id, created_at, data...]]]
+//            //                              ]
+//
+//
+//            $tempArray = array();
+//
+//            foreach ($sectionedCollection as $envArray) {
+//                $eachPlotPoint[] = [$envArray->created_at->toTimeString(), $envArray->data];
+//                $tempArray = array_merge($tempArray, $eachPlotPoint);
+//            }
+//            $masterReturn[$i]['values'] = array_merge($masterReturn[$i]['values'], $tempArray);
+//            $i += 1;
+//        }
+//        return view('dashboard')->with('envData', $masterReturn);
+//    }
+//}
