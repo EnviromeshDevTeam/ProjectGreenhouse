@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\DataController;
-use App\Http\Controllers\DeviceController;
-use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\api\CategoryController;
+use App\Http\Controllers\api\DataController;
+use App\Http\Controllers\api\DeviceController;
+use App\Http\Controllers\api\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*

@@ -31,9 +31,9 @@
                     @else
                         <a href="{{ route('login') }}" class="text-muted">Log in</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-muted">Register</a>
-                        @endif
+{{--                        @if (Route::has('register'))--}}
+{{--                            <a href="{{ route('register') }}" class="ml-4 text-muted">Register</a>--}}
+{{--                        @endif--}}
                     @endif
                 </div>
             @endif

@@ -38,7 +38,6 @@
         google.charts.setOnLoadCallback(co2Chart);
         google.charts.setOnLoadCallback(tvocChart);
         google.charts.setOnLoadCallback(soilMoistChart);
-        google.charts.setOnLoadCallback(cpuTempChart);
 
         //for loop here $envData[i][values]
         //TODO: Was originally gonna forloop the chart but couldn't decide whether todo forloop in javascript or php cause of google charts loads
@@ -140,26 +139,6 @@
                 backgroundColor: 'f1f8e9'
             };
             let chartElement = new google.visualization.LineChart(document.getElementById(<?= json_encode($envData[4]['htmlId']);?>));
-            chartElement.draw(data, options);
-        }
-
-        function cpuTempChart() {
-            var data = new google.visualization.arrayToDataTable(<?= json_encode($envData[5]['values']);?>);
-            var options = {
-                title: <?= json_encode($envData[5]['title']);?>,
-                hAxis: {
-                    title: 'created_at'
-                },
-                vAxis: {
-                    title: <?= json_encode($envData[5]['vAxis']);?>
-                },
-                curveType: 'function',
-                legend: {
-                    position: 'bottom'
-                },
-                backgroundColor: 'f1f8e9'
-            };
-            let chartElement = new google.visualization.LineChart(document.getElementById(<?= json_encode($envData[5]['htmlId']);?>));
             chartElement.draw(data, options);
         }
     </script>

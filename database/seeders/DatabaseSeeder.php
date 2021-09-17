@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call( [
-            MeshDataSeeder::class,
+            //MeshDataSeeder::class,
             UserSeeder::class,
             CategorySeeder::class,
             Deviceseeder::class,
