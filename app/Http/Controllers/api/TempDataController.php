@@ -77,7 +77,7 @@ class TempDataController extends Controller
         //30 Day Timescale - Every 5 Days Intervals
 
         $massedDataArray = array("Devices" =>
-            array(1 =>
+            [
                 array(
                     "Temperature" => array(
                         "1H" => $this->randTimedArrays(1, 1),
@@ -120,7 +120,7 @@ class TempDataController extends Controller
                         "30D" => $this->randTimedArrays(5, 720)
                     )
                 )
-            )
+            ]
         );
         return response()->json($massedDataArray);
     }
