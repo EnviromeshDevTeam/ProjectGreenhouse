@@ -54,7 +54,7 @@ class TempDataController extends Controller
                     $envValue = $moisture / $i;
                     break;
             }
-            array_push($timedStampedArray, [$copiedInitTimeRef->addMinutes($i * $designatedInterval)->toDateTimeString(), $envValue]);
+            array_push($timedStampedArray, ["date"=>$copiedInitTimeRef->addMinutes($i * $designatedInterval)->toDateTimeString(), "value"=>$envValue]);
         }
         return $timedStampedArray;
     }
