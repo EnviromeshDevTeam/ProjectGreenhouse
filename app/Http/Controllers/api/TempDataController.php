@@ -79,7 +79,8 @@ class TempDataController extends Controller
         $massedDataArray = array("Devices" =>
             [
                 array(
-                    "Temperature" => array(
+                    array(
+                        "category" => 1,
                         "1H" => $this->randTimedArrays(1, 1),
                         "4H" => $this->randTimedArrays(1, 4),
                         "12H" => $this->randTimedArrays(1, 12),
@@ -87,7 +88,8 @@ class TempDataController extends Controller
                         "6D" => $this->randTimedArrays(1, 144),
                         "30D" => $this->randTimedArrays(1, 720)
                     ),
-                    "Humidity" => array(
+                    array(
+                        "category" => 2,
                         "1H" => $this->randTimedArrays(2, 1),
                         "4H" => $this->randTimedArrays(2, 4),
                         "12H" => $this->randTimedArrays(2, 12),
@@ -95,7 +97,8 @@ class TempDataController extends Controller
                         "6D" => $this->randTimedArrays(2, 144),
                         "30D" => $this->randTimedArrays(2, 720)
                     ),
-                    "CO2" => array(
+                    array(
+                        "category" => 3,
                         "1H" => $this->randTimedArrays(3, 1),
                         "4H" => $this->randTimedArrays(3, 4),
                         "12H" => $this->randTimedArrays(3, 12),
@@ -103,7 +106,8 @@ class TempDataController extends Controller
                         "6D" => $this->randTimedArrays(3, 144),
                         "30D" => $this->randTimedArrays(3, 720)
                     ),
-                    "TVOC" => array(
+                    array(
+                        "category" => 4,
                         "1H" => $this->randTimedArrays(4, 1),
                         "4H" => $this->randTimedArrays(4, 4),
                         "12H" => $this->randTimedArrays(4, 12),
@@ -111,7 +115,8 @@ class TempDataController extends Controller
                         "6D" => $this->randTimedArrays(4, 144),
                         "30D" => $this->randTimedArrays(4, 720)
                     ),
-                    "Moisture" => array(
+                    array(
+                        "category" => 5,
                         "1H" => $this->randTimedArrays(5, 1),
                         "4H" => $this->randTimedArrays(5, 4),
                         "12H" => $this->randTimedArrays(5, 12),
