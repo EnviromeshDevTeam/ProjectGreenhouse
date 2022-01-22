@@ -11,13 +11,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                <x-jet-nav-link href="{{ route('dashboard.dashboard_graphing') }}" :active="request()->routeIs('dashboard.dashboard_graphing')">
                     {{ __('Dashboard') }}
                 </x-jet-nav-link>
 
-                <x-jet-nav-link href="{{ route('data.index') }}" :active="request()->routeIs('data.index')">
-                    {{ __('Environment Data') }}
-                </x-jet-nav-link>
+                <!--Disabled Data CRUD Because theres no need and its too much data to be loaded-->
+{{--                <x-jet-nav-link href="{{ route('data.index') }}" :active="request()->routeIs('data.index')">--}}
+{{--                    {{ __('Environment Data') }}--}}
+{{--                </x-jet-nav-link>--}}
 
                 <x-jet-nav-link href="{{ route('devices.index') }}" :active="request()->routeIs('devices.index')">
                     {{ __('Devices') }}

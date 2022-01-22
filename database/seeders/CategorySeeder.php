@@ -17,7 +17,7 @@ class CategorySeeder extends Seeder
         $cats = [
             [
                 "id" =>1,
-                "name"=>"temp",
+                "name"=>"temperature",
             ],
             [
                 "id" =>2,
@@ -25,20 +25,16 @@ class CategorySeeder extends Seeder
             ],
             [
                 "id" =>3,
-                "name"=>"eCO2",
+                "name"=>"eco2",
             ],
             [
                 "id" =>4,
-                "name"=>"TVOC",
+                "name"=>"tvoc",
             ],
             [
                 "id" =>5,
-                "name"=>"soilMoist",
+                "name"=>"moisture",
             ],
-            [
-                "id" =>6,
-                "name"=>"cpuTemp",
-            ]
        ];
 
         foreach($cats as $cat){

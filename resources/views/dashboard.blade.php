@@ -11,6 +11,14 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Live Environment Data from 1st Device</div>
                     <div class="panel-body">
+                        <!--Dynamically Create Valid Timescales to choose from-->
+                        @foreach($valid_Timescales as $timescale)
+                            <a href="{{route('dashboard.dashboard_graphing', $timescale)}}" class="btn btn-primary">
+                                {{$timescale}}
+                            </a>
+                        @endforeach
+                    </div>
+                    <div class="panel-body">
                         <div id="tempChart" style="height:200px"></div>
                         <div id="humChart" style="height:200px"></div>
                         <div id="co2Chart" style="height:200px"></div>
@@ -22,7 +30,6 @@
             </div>
         </div>
     </div>
-
 
     <!--    Lets try google charts first-->
     <!--Async the script tags??-->
@@ -41,8 +48,8 @@
 
         //for loop here $envData[i][values]
         //TODO: Was originally gonna forloop the chart but couldn't decide whether todo forloop in javascript or php cause of google charts loads
-
         function tempChart() {
+            //TODO Change '1H to whatever timescale button string is pressed (Future implementation)
             var data = new google.visualization.arrayToDataTable(<?= json_encode($envData[0]['values']);?>);
             var options = {
                 title: <?= json_encode($envData[0]['title']);?>,
@@ -52,7 +59,7 @@
                 vAxis: {
                     title: <?= json_encode($envData[0]['vAxis']);?>
                 },
-                curveType: 'function',
+                curveType: 'none',
                 legend: {
                     position: 'bottom'
                 },
@@ -72,7 +79,7 @@
                 vAxis: {
                     title: <?= json_encode($envData[1]['vAxis']);?>
                 },
-                curveType: 'function',
+                curveType: 'none',
                 legend: {
                     position: 'bottom'
                 },
@@ -92,7 +99,7 @@
                 vAxis: {
                     title: <?= json_encode($envData[2]['vAxis']);?>
                 },
-                curveType: 'function',
+                curveType: 'none',
                 legend: {
                     position: 'bottom'
                 },
@@ -112,7 +119,7 @@
                 vAxis: {
                     title: <?= json_encode($envData[3]['vAxis']);?>
                 },
-                curveType: 'function',
+                curveType: 'none',
                 legend: {
                     position: 'bottom'
                 },
@@ -132,7 +139,7 @@
                 vAxis: {
                     title: <?= json_encode($envData[4]['vAxis']);?>
                 },
-                curveType: 'function',
+                curveType: 'none',
                 legend: {
                     position: 'bottom'
                 },

@@ -1,14 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\api\api;
+namespace App\Http\Controllers\api;
 
-use App\Http\Controllers\api\Controller;
+use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Device;
 use App\Models\MeshData;
 use Illuminate\Http\Request;
 use function Livewire\str;
 
+
+//TODO: DEPRECATED UNUSED
 class DataController extends Controller
 {
     /**
