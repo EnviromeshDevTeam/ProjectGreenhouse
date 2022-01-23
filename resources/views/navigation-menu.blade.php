@@ -2,7 +2,8 @@
     <div class="container">
         <!-- Logo -->
         <a class="navbar-brand mr-4" href="/">
-            <x-jet-application-mark width="36" />
+            <!--Need to tweak width setting here-->
+            <img src="{{asset('/images/greenhouselogo256.svg')}}" class="img-fluid" width="75" alt="greenhouse logo 256"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
