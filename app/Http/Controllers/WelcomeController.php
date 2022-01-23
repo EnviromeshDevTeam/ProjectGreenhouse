@@ -78,6 +78,7 @@ class WelcomeController extends Controller
             ['title' => 'Temperature Graph', 'vAxis' => 'Degrees Celsius', 'htmlId' => 'tempChart', 'values' => []],
             ['title' => 'Humidity Graph', 'vAxis' => 'humidity', 'htmlId' => 'humChart', 'values' => []],
             ['title' => 'Carbon Dioxide Graph', 'vAxis' => 'co2 level', 'htmlId' => 'co2Chart', 'values' => []],
+            ['title' => 'Carbon Dioxide Graph', 'vAxis' => 'co2 level', 'htmlId' => 'co2Chart', 'values' => []],
             ['title' => 'Air Quality Graph', 'vAxis' => 'Parts per', 'htmlId' => 'tvocChart', 'values' => []],
             ['title' => 'Soil Moisture Graph', 'vAxis' => 'Moisture per sq inch', 'htmlId' => 'soilMoistChart', 'values' => []],
             ['title' => 'Cpu Temperature Graph', 'vAxis' => 'Degrees Celsius', 'htmlId' => 'cpuTempChart', 'values' => []]
@@ -91,7 +92,6 @@ class WelcomeController extends Controller
             $masterReturn[$i]['values'] = $meshdata_parser->returnFromTimeScale($_timescale, 1, $i + 1);
         }
         $valid_Timescales = $this->check_timeScaleButtons();
-        dd($masterReturn);
         return view('dashboard', ['envData' => $masterReturn, 'valid_Timescales' => $valid_Timescales]);
     }
 
