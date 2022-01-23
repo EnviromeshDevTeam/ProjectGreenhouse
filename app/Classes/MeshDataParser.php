@@ -63,9 +63,9 @@ class MeshDataParser
             foreach ($envValue as $eVal) {
                 $_arr2Push = [];
                 if ($_is_api) {
-                    $_arr2Push = ['date' => $eVal->created_at->toDateTimeString(), 'value' => floatval($eVal->data)];
+                    $_arr2Push = ['date' => $eVal->created_at->toDateTimeString(), 'value' => $eVal->data];
                 } else {
-                    $_arr2Push = [$eVal->created_at->toDateTimeString(), floatval($eVal->data)];
+                    $_arr2Push = [$eVal->created_at->toDateTimeString(), $eVal->data];
                 }
                 array_push($givenTimescaleReturn, $_arr2Push);
             }
