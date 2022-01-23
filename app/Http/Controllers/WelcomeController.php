@@ -91,6 +91,7 @@ class WelcomeController extends Controller
             $masterReturn[$i]['values'] = $meshdata_parser->returnFromTimeScale($_timescale, 1, $i + 1);
         }
         $valid_Timescales = $this->check_timeScaleButtons();
+        dd($masterReturn);
         return view('dashboard', ['envData' => $masterReturn, 'valid_Timescales' => $valid_Timescales]);
     }
 
