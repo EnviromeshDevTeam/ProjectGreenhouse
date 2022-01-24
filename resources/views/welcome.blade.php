@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Laravel</title>
+    <title>Enviromesh</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('/favicon.png')}}">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -26,7 +26,9 @@
         <div class="d-flex justify-content-end">
                 <div class="">
                         <a href="{{ url('/dashboard') }}" class="text-muted">Dashboard</a>
-{{--                        <a href="{{ route('login') }}" class="text-muted">Log in</a>--}}
+
+
+                    <a href="{{ route('login') }}" class="text-muted">Log in</a>
                         <!--Disabled register as we don't want new accounts registering-->
 
 {{--                        @if (Route::has('register'))--}}
