@@ -44,9 +44,9 @@ class WelcomeController extends Controller
 
         $device_list = Device::all();
         foreach ($device_list as $device) {
-            if ($device->updated_at->diffInSeconds(Carbon::now()) <= 40) {
+            if ($device->updated_at->diffInSeconds(Carbon::now()) <= 61) {
                 $device->setAttribute('status', $this->device_success);
-            } elseif ($device->updated_at->diffInSeconds(Carbon::now()) > 40) {
+            } elseif ($device->updated_at->diffInSeconds(Carbon::now()) > 61) {
                 //$device->status = $this->device_failure;
                 $device->setAttribute('status', $this->device_failure);
                 array_push($DEBUG_DATE, $device->updated_at);
