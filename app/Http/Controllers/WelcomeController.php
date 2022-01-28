@@ -40,7 +40,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $DEBUG_DATE=["now" => Carbon::now()];
+//        $DEBUG_DATE=["now" => Carbon::now()];
 
         $device_list = Device::all();
         foreach ($device_list as $device) {
@@ -49,8 +49,8 @@ class WelcomeController extends Controller
             } elseif ($device->updated_at->diffInSeconds(Carbon::now()) > 61) {
                 //$device->status = $this->device_failure;
                 $device->setAttribute('status', $this->device_failure);
-                array_push($DEBUG_DATE, $device->updated_at);
-                dd($DEBUG_DATE);
+//                array_push($DEBUG_DATE, $device->updated_at);
+//                dd($DEBUG_DATE);
             } else {
                 //$device->status = $this->device_unknown;
                 $device->setAttribute('status', $this->device_unknown);
