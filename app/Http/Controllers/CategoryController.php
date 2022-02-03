@@ -43,7 +43,7 @@ class CategoryController extends Controller
     {
         //How do we integrate this validated sequence
         //if validated ?
-        $validated = $request->validate([
+        request()->validate([
             'name'=>'required',
         ]);
 
@@ -87,7 +87,7 @@ class CategoryController extends Controller
     {
         //How do we integrate this validated sequence
         //if validated ?
-        $validated = $request->validate([
+        request()->validate([
             'name'=>'required',
         ]);
 

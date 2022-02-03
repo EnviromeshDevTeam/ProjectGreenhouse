@@ -14,10 +14,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call( [
-            MeshDataSeeder::class,
+            //MeshDataSeeder::class,
             UserSeeder::class,
             CategorySeeder::class,
             Deviceseeder::class,
+            MeshDataSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
     }

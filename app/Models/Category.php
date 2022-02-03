@@ -13,6 +13,6 @@ class Category extends Model
     public $fillable = ['name'];
 
     public function meshdata(){
-        return $this->hasMany(MeshData::class, 'category_id','id');
+        return $this->hasMany(MeshData::class);
     }
 }
