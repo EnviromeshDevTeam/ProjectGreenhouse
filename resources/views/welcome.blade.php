@@ -25,11 +25,12 @@
     <div class="col-12">
         <div class="d-flex justify-content-end">
                 <div class="">
-                        <a href="{{ url('/dashboard') }}" class="text-muted">Dashboard</a>
+
+                    <a href="{{ url('/dashboard') }}" class="btn btn-success">Dashboard</a>
+                    <a href="{{ route('login') }}" class="btn btn-danger">Log in</a>
 
 
-                    <a href="{{ route('login') }}" class="text-muted">Log in</a>
-                        <!--Disabled register as we don't want new accounts registering-->
+                    <!--Disabled register as we don't want new accounts registering-->
 
 {{--                        @if (Route::has('register'))--}}
 {{--                            <a href="{{ route('register') }}" class="ml-4 text-muted">Register</a>--}}
@@ -51,7 +52,7 @@
                 <div class="container">
                     <p>This is the website for Project Greenhouse made by the EnviromeshDevTeam. Team members are: Kym(Dashboard), Alex(Dashboard), Syd(Whole Stack) and Vushesh(Mobile)</p>
                 </div>
-                <div class="card-columns">
+                <div class="card-columns mx-auto d-flex justify-content-center">
                     @foreach($devices as $device)
                     <div class="card {{ $device->status['dstatus_bg'] }} text-dark"><!--Add FA icon status class here in future-->
                         <h2 class="card-header">
